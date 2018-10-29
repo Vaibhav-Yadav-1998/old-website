@@ -1,55 +1,38 @@
 <template>
-  <div>
-    <nuxt/>
-  </div>
+  <main>
+    <Navbar />
+    <div id="wrapper">
+      <nuxt />
+    </div>
+  </main>
 </template>
 
+<script>
+import Navbar from "../components/Navbar"
+
+export default {
+  components: {
+    Navbar
+  }
+}
+</script>
+
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+:root {
+  font-size: 62.5%;
+  --primary-color: #6b238e;
+  --secondary-color: #eee;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+body {
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: calc(1.6rem + (2 - 1.6) * ((100vw - 32rem) / (160 - 32)));
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+#wrapper {
+  padding-top: 5rem;
 }
 </style>
