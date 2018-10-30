@@ -1,3 +1,13 @@
 <template>
-  <h1>official website</h1>
+  <Welcome />
 </template>
+
+<script>
+import Welcome from "../components/Welcome"
+
+export default {
+  components: {
+    Welcome
+  }
+}
+</script>
