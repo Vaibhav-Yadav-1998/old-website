@@ -30,9 +30,11 @@ body {
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: calc(1.6rem + (2 - 1.6) * ((100vw - 32rem) / (160 - 32)));
+  line-height: 1.5;
+  word-spacing: 1rem;
 }
 
 #wrapper {
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 </style>
