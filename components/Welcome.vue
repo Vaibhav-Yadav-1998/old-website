@@ -1,6 +1,6 @@
 <template>
   <div class="welcome">
-    <h1 class="heading">Hello, नमस्ते, Hola <br> I am Vaibhav</h1>
+    <h1 class="heading">Welcome &#x1F64F; <br> I am Vaibhav</h1>
     <a 
       href="#about" 
       class="about-me">About Me</a>
@@ -15,14 +15,14 @@ export default {
 
 <style scoped>
 .welcome {
-  background: url("../assets/header-background.jpg");
+  background: url("../assets/showcase.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
   height: 100vh;
   background-position: center;
-  color: var(--secondary-color);
+  color: white;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -34,6 +34,8 @@ export default {
 .heading {
   font-size: 6rem;
   font-family: "Lobster", Arial, Helvetica, sans-serif;
+  background: rgba(65, 65, 65, 0.3);
+  border-radius: 1rem;
 }
 
 .about-me {
@@ -57,7 +59,7 @@ export default {
 
 @media only screen and (max-width: 500px) {
   .heading {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 </style>
