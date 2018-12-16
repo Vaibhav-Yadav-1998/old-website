@@ -55,6 +55,7 @@ export default {
   color: var(--secondary-color);
   position: fixed;
   overflow: hidden;
+  z-index: 1;
 }
 
 .head-nav,
