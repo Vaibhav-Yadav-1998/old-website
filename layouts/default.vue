@@ -20,7 +20,7 @@ export default {
 <style>
 :root {
   font-size: 62.5%;
-  --primary-color: #6b238e;
+  --primary-color: black;
   --secondary-color: #eee;
 }
 
